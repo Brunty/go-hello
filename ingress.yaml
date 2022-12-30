@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: go-hello-ingress
+  namespace: go-hello
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+    - host: go-hello.k5r.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: go-hello
+                port:
+                  number: 8180
