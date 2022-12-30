@@ -18,4 +18,4 @@ spec:
           image: brunty/go-hello:0.0.2
           imagePullPolicy: IfNotPresent
           ports:
-              - containerPort: 8180
+            - containerPort: 8180
