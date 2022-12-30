@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: go-hello
+  labels:
+    name: local
+    lang: go
