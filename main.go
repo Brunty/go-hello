@@ -15,7 +15,7 @@ func main() {
 			os.Exit(1)
 		}
 		w.WriteHeader(http.StatusOK)
-		w.Header().Set("Content-Type", "appllication/text")
+		w.Header().Set("Content-Type", "application/text")
 		w.Write([]byte(hostname))
 	})
 	fmt.Printf("Starting server on :8180")
